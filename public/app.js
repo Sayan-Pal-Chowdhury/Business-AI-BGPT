@@ -5,6 +5,7 @@ const statusText = document.getElementById("statusText");
 const newChat = document.getElementById("newChat");
 
 function addMessage(role, text) {
+  document.getElementById("welcomePanel")?.remove();
   const article = document.createElement("article");
   article.className = `message ${role}`;
   const label = role === "user" ? "You" : "BGPT";
@@ -67,8 +68,12 @@ promptInput.addEventListener("keydown", event => {
 });
 
 newChat?.addEventListener("click", () => {
-  chatLog.innerHTML = "";
-  addMessage("bot", "Ask me about sales, inventory, credit, profit, customers, orders, billing, delivery, or operations.");
+  chatLog.innerHTML = `
+    <div id="welcomePanel" class="welcome-panel">
+      <h2>What business problem are you working on?</h2>
+      <p>Ask about sales, inventory, credit, profit, customers, orders, billing, delivery, or operations.</p>
+    </div>
+  `;
 });
 
 checkHealth();

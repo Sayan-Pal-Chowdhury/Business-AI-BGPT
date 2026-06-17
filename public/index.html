@@ -13,13 +13,13 @@
   <main class="app-shell">
     <aside class="side-panel">
       <div class="brand">
-        <span>BG</span>
-        <div>
-          <strong>BGPT</strong>
-          <small>Business AI</small>
-        </div>
+        <strong>BGPT</strong>
       </div>
       <button id="newChat" class="new-chat" type="button">New chat</button>
+      <button class="side-action" type="button">Search chats</button>
+      <button class="side-action" type="button">Business library</button>
+      <button class="side-action" type="button">Workflows</button>
+      <p class="side-label">Recents</p>
       <nav class="chat-history" aria-label="Recent chats">
         <button type="button">Credit risk review</button>
         <button type="button">Inventory reorder plan</button>
@@ -32,18 +32,15 @@
 
     <section class="chat-panel">
       <header class="chat-header">
-        <div>
-          <p>Business AI</p>
-          <h1>BGPT</h1>
-        </div>
+        <h1>BGPT</h1>
         <span class="model-pill">Business mode</span>
       </header>
 
       <div id="chatLog" class="chat-log" aria-live="polite">
-        <article class="message bot">
-          <span>BGPT</span>
-          <p>Ask me about sales, inventory, credit, profit, customers, orders, billing, delivery, or operations.</p>
-        </article>
+        <div id="welcomePanel" class="welcome-panel">
+          <h2>What business problem are you working on?</h2>
+          <p>Ask about sales, inventory, credit, profit, customers, orders, billing, delivery, or operations.</p>
+        </div>
       </div>
 
       <form id="chatForm" class="chat-form">
