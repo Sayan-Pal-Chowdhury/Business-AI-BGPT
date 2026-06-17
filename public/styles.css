@@ -130,6 +130,10 @@ button {
   background: var(--bg);
 }
 
+.chat-panel.is-empty {
+  grid-template-rows: 58px auto auto 1fr;
+}
+
 .chat-header {
   display: flex;
   align-items: center;
@@ -159,6 +163,11 @@ button {
   padding: 24px 0 36px;
 }
 
+.chat-panel.is-empty .chat-log {
+  overflow: visible;
+  padding: 0;
+}
+
 .welcome-panel {
   display: grid;
   place-items: center;
@@ -166,6 +175,11 @@ button {
   min-height: 100%;
   padding: 0 22px 80px;
   text-align: center;
+}
+
+.chat-panel.is-empty .welcome-panel {
+  min-height: auto;
+  padding: clamp(88px, 18vh, 168px) 22px 24px;
 }
 
 .welcome-panel h2 {
@@ -222,6 +236,11 @@ button {
   width: min(100%, 980px);
   margin: 0 auto;
   padding: 14px 22px 22px;
+}
+
+.chat-panel.is-empty .chat-form {
+  align-self: start;
+  padding-top: 0;
 }
 
 .chat-form::after {

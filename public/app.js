@@ -3,9 +3,11 @@ const promptInput = document.getElementById("promptInput");
 const chatLog = document.getElementById("chatLog");
 const statusText = document.getElementById("statusText");
 const newChat = document.getElementById("newChat");
+const chatPanel = document.getElementById("chatPanel");
 
 function addMessage(role, text) {
   document.getElementById("welcomePanel")?.remove();
+  chatPanel?.classList.remove("is-empty");
   const article = document.createElement("article");
   article.className = `message ${role}`;
   const label = role === "user" ? "You" : "BGPT";
@@ -68,6 +70,7 @@ promptInput.addEventListener("keydown", event => {
 });
 
 newChat?.addEventListener("click", () => {
+  chatPanel?.classList.add("is-empty");
   chatLog.innerHTML = `
     <div id="welcomePanel" class="welcome-panel">
       <h2>What business problem are you working on?</h2>
