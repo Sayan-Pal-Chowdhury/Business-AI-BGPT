@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business AI | BGPT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <aside class="side-panel">
+      <div class="brand">
+        <span>BG</span>
+        <div>
+          <strong>BGPT</strong>
+          <small>Business AI</small>
+        </div>
+      </div>
+      <button id="newChat" class="new-chat" type="button">New chat</button>
+      <nav class="chat-history" aria-label="Recent chats">
+        <button type="button">Credit risk review</button>
+        <button type="button">Inventory reorder plan</button>
+        <button type="button">Profit margin check</button>
+      </nav>
+      <div class="side-footer">
+        <span id="statusText">Checking...</span>
+      </div>
+    </aside>
+
+    <section class="chat-panel">
+      <header class="chat-header">
+        <div>
+          <p>Business AI</p>
+          <h1>BGPT</h1>
+        </div>
+        <span class="model-pill">Business mode</span>
+      </header>
+
+      <div id="chatLog" class="chat-log" aria-live="polite">
+        <article class="message bot">
+          <span>BGPT</span>
+          <p>Ask me about sales, inventory, credit, profit, customers, orders, billing, delivery, or operations.</p>
+        </article>
+      </div>
+
+      <form id="chatForm" class="chat-form">
+        <textarea id="promptInput" rows="1" placeholder="Ask a business question about sales, credit, inventory, profit, or operations..." required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Credit risk",
+    "tags": ["credit", "customer", "payment", "late"],
+    "content": "For late-paying customers, reduce new credit, set a clear follow-up date, and prioritize collecting old dues before increasing the limit."
+  },
+  {
+    "title": "Inventory reorder",
+    "tags": ["inventory", "stock", "product", "reorder"],
+    "content": "For fast-moving products, compare current stock with recent sales speed and reorder before the product reaches zero."
+  },
+  {
+    "title": "Profit check",
+    "tags": ["profit", "loss", "margin", "expense"],
+    "content": "Profit should be checked using selling price, buying price, quantity, discounts, expenses, wastage, and unpaid credit."
+  },
+  {
+    "title": "Cash flow",
+    "tags": ["cash", "expense", "credit", "payment"],
+    "content": "When cash flow is low, collect pending credit, control unnecessary expenses, and push more cash or digital-payment sales."
+  },
+  {
+    "title": "Order operations",
+    "tags": ["order", "delivery", "billing", "pickup"],
+    "content": "Order operations improve when each order has a clear status, payment mode, delivery or pickup choice, and customer note."
+  },
+  {
+    "title": "Business AI scope",
+    "tags": ["business", "operations", "bgpt", "zuno"],
+    "content": "BGPT is business-only and should focus on shopkeeper workflows: sales, inventory, credit, profit, customers, orders, billing, delivery, and operations."
+  }
+]
